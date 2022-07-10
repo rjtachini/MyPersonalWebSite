@@ -1,0 +1,130 @@
+:root {
+  --first-color: #78e0f5;
+  --second-color: #5596d4;
+  --third-color: #6a84eb;
+  --fourth-color: #6455d4;
+  --fifth-color: #994bfa;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--first-color);
+}
+
+main {
+  text-align: center;
+}
+
+main p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main h2 {
+  font-family: "Teko", sans-serif;
+}
+
+header{
+  background-color: var(--second-color);
+  padding: 1rem;
+}
+
+.cv a{
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; /*Aling horizontal*/
+  align-items: center; /* Aling Vertical*/
+  text-decoration: none;
+  color: black;
+  font-family: 'Edu SA Beginner', cursive;
+}
+
+.aboutme{
+  margin: 1rem;
+}
+.aboutme img{
+  border-radius: 50%;
+}
+
+
+.exp{
+  display: flex;
+  justify-content: center;
+}
+.logos{
+  margin: 0.3rem;
+}
+
+
+
+ 
+
+
+  /* For extremely small screen devices (599px and below) */
+@media only screen and (max-width: 599px) {
+ .large{
+  display: none;
+ }
+   main p{
+    font-size: 3rem;
+  }
+  main h2{
+    font-size: 2rem;
+  }
+.aboutme img{  
+  width: 10rem;
+  height: 10rem; 
+}
+.cv a{
+  font-size: 1rem;
+}
+.cv a span{
+  font-size: 1.3rem;
+}
+.logos img{
+  width: 4rem;
+}
+
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .small{
+    display:none;
+  }
+  .cv a{
+    font-size: 1.8rem;
+  }
+  .cv a span{
+    font-size: 2rem;
+  }
+  main p{
+    font-size: 3.7rem;
+  }
+  main h2{
+    font-size: 3rem;
+  }
+.aboutme img{  
+  width: 20rem;
+  height: 20rem; 
+}
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  main p{
+    font-size: 4.5rem;
+  }
+  main h2{
+    font-size: 3.3rem;
+  }
+.aboutme img{  
+  width: 25rem;
+  height: 25rem; 
+}
+
+
+}
